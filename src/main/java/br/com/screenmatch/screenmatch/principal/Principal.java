@@ -60,6 +60,6 @@ public class principal {
         List<Episodios> episodios = temporadas.stream()
                 .flatMap(t -> t.episodios().stream()
                 .map(d -> new Episodios(t.numero(), d))
-                ).collect(Collectors.toList())
+                ).collect(Collectors.toList());
     }
 }
